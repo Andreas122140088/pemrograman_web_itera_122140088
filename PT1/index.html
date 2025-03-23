@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andreas Alfin Yoga Utama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 8px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- To-Do List -->
+  <section>
+    <h1>To-Do List</h1>
+    <input type="text" id="todoInput" placeholder="Tambahkan item baru..." onkeydown="handleEnter(event)" />
+    <button onclick="addItem()">Tambah</button>
+    <ul id="todoList"></ul>
+  </section>
+
+  <!-- Kalkulator -->
+  <section>
+    <h1>Kalkulator</h1>
+    <input type="number" id="num1" placeholder="Angka pertama" />
+    <input type="number" id="num2" placeholder="Angka kedua" />
+    <div>
+      <button onclick="calculate('add')">+</button>
+      <button onclick="calculate('subtract')">-</button>
+      <button onclick="calculate('multiply')">*</button>
+      <button onclick="calculate('divide')">/</button>
+      <button onclick="calculate('power')">^</button>
+      <button onclick="calculate('sqrt')">√</button>
+      <button onclick="calculate('modulus')">%</button>
+    </div>
+    <p>Hasil: <span id="result">0</span></p>
+  </section>
+
+  <!-- Validasi Form -->
+  <section>
+    <h1>Validasi Form</h1>
+    <form onsubmit="return validateForm()">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br />
+      <button type="submit">Validasi</button>
+    </form>
+    <p id="validationMessage"></p>
+  </section>
+
+  <!-- Memuat file JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
