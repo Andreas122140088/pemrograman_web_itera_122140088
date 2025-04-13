@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8">
+
+
+<div class="mb-4 space-y-1">
+    <div id="calendar" class="text-lg font-medium text-blue-600"></div>
+    <div id="weather" class="text-sm text-gray-700"></div>
+    <div id="location" class="text-sm text-gray-700"></div>
+    <div id="forecast" class="mt-4 overflow-x-auto"></div>
+
+
+
+  </div>
+  
+<main class="max-w-2xl mx-auto p-4 bg-white shadow rounded">
+    <h2 class="text-xl font-semibold mb-4">📝 Personal Task Dashboard</h2>
+    <form id="taskForm" class="space-y-2">
+        <input id="taskTitle" type="text" placeholder="Task title" class="w-full p-2 border rounded" required />
+        <textarea id="taskDesc" placeholder="Task description" class="w-full p-2 border rounded" required></textarea>
+        
+        <!-- Input Tanggal -->
+        <input id="taskDate" type="date" class="w-full p-2 border rounded" required />
+        
+        <!-- Input Jam -->
+        <input id="taskTime" type="time" class="w-full p-2 border rounded" required />
+        
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Task</button>
+      </form>
+      
+    <div id="taskList" class="mt-6 space-y-2"></div>
+  </main>
+  <script type="module" src="js/dashboard.js"></script>
+
+  
+<!-- Type module penting untuk mendukung ES modules -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
+
