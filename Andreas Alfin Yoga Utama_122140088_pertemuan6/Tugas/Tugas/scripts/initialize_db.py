@@ -12,8 +12,10 @@ def setup_models(dbsession):
     Add or update models / fixtures in the database.
 
     """
-    model = models.mymodel.MyModel(name='one', value=1)
-    dbsession.add(model)
+    matkul1 = models.Matakuliah(kode_mk='IF101', nama_mk='Algoritma Pemrograman', sks=3, semester=1)
+    matkul2 = models.Matakuliah(kode_mk='IF102', nama_mk='Struktur Data', sks=3, semester=2)
+    dbsession.add_all([matkul1, matkul2])
+
 
 
 def parse_args(argv):

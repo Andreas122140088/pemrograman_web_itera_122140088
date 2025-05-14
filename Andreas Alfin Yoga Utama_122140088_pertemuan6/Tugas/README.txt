@@ -1,12 +1,12 @@
-pyramid_mahasiswa
-=================
+Tugas
+=====
 
 Getting Started
 ---------------
 
 - Change directory into your newly created project.
 
-    cd pyramid_mahasiswa
+    cd Tugas
 
 - Create a Python virtual environment.
 
@@ -32,7 +32,7 @@ Getting Started
 
 - Load default data into the database using a script.
 
-    env/bin/initialize_pyramid_mahasiswa_db development.ini
+    env/bin/initialize_Tugas_db development.ini
 
 - Run your project's tests.
 

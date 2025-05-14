@@ -29,9 +29,9 @@ tests_require = [
 ]
 
 setup(
-    name='pyramid_mahasiswa',
+    name='Tugas',
     version='0.0',
-    description='pyramid_mahasiswa',
+    description='Tugas',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         'Programming Language :: Python',
@@ -52,10 +52,10 @@ setup(
     install_requires=requires,
     entry_points={
         'paste.app_factory': [
-            'main = pyramid_mahasiswa:main',
+            'main = Tugas:main',
         ],
         'console_scripts': [
-            'initialize_pyramid_mahasiswa_db = pyramid_mahasiswa.scripts.initialize_db:main',
+            'initialize_Tugas_db = Tugas.scripts.initialize_db:main',
         ],
     },
 )

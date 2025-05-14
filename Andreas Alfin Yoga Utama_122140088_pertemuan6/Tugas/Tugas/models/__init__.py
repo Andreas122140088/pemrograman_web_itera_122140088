@@ -2,6 +2,8 @@ from sqlalchemy import engine_from_config
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import configure_mappers
 import zope.sqlalchemy
+from .matakuliah import Matakuliah 
+
 
 # import or define all models here to ensure they are attached to the
 # Base.metadata prior to any initialization routines
@@ -53,7 +55,7 @@ def includeme(config):
     """
     Initialize the model for a Pyramid app.
 
-    Activate this setup using ``config.include('pyramid_mahasiswa.models')``.
+    Activate this setup using ``config.include('Tugas.models')``.
 
     """
     settings = config.get_settings()
